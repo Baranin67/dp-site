@@ -1,0 +1,93 @@
+@import '../../../commons/style/variables.scss';
+
+#ranks,
+#coins {
+	display: flex;
+	flex-direction: column;
+	padding: 50px;
+	gap: 20px;
+	color: $primary-color;
+
+	>header {
+		font-size: 1.5rem;
+
+		animation: $content-show-animation;
+		animation-fill-mode: forwards;
+		opacity: 0;
+		translate: -10px 0;
+		scale: 1.1;
+	}
+
+	.shop-items-wrapper {
+		flex-wrap: wrap;
+		display: flex;
+		flex-direction: row;
+		gap: 30px;
+		row-gap: 30px;
+
+		.card {
+			.extra-content {
+				width: 100%;
+				display: flex;
+				justify-content: space-between;
+				align-items: flex-end;
+
+				button {
+					width: 100px;
+					min-width: 100px;
+				}
+
+				.price-container {
+					display: flex;
+					align-items: flex-start;
+					flex-direction: column;
+
+					.caption {
+						opacity: .5;
+					}
+
+					.price {
+						font-size: 1.4rem;
+						font-weight: 600;
+					}
+				}
+			}
+		}
+
+		.card:nth-child(1) {
+			animation-delay: .2s;
+		}
+
+		.card:nth-child(2) {
+			animation-delay: .3s;
+		}
+
+		.card:nth-child(3) {
+			animation-delay: .4s;
+		}
+
+		.card:nth-child(4) {
+			animation-delay: .5s;
+		}
+
+		.card:nth-child(5) {
+			animation-delay: .6s;
+		}
+
+		.card:nth-child(6) {
+			animation-delay: .7s;
+		}
+
+		.card:nth-child(7) {
+			animation-delay: .8s;
+		}
+
+		.card:nth-child(8) {
+			animation-delay: .9s;
+		}
+
+		.card:nth-child(9) {
+			animation-delay: .10s;
+		}
+	}
+}

@@ -1,0 +1,53 @@
+@keyframes content-show {
+  to {
+    opacity: 1;
+    translate: 0 0;
+    scale: 1;
+  }
+}
+footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #00386B;
+  padding: 30px 50px;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+footer * {
+  color: white;
+}
+footer nav {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+footer nav div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+footer nav div div {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+footer nav div a {
+  transition: 0.1s ease-in-out opacity;
+  margin-left: 5px;
+}
+footer nav div a:hover {
+  opacity: 0.5;
+}
+footer #footer-info-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  color: #ddd;
+}
+footer #footer-info-container span:nth-child(2) {
+  opacity: 0.5;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,202 @@
+@import '../../../commons/style/variables.scss';
+
+@keyframes indicator-moving {
+	0% {
+		transform: translateY(0);
+	}
+
+	50% {
+		transform: translateY(-10px);
+	}
+
+	100% {
+		transform: translateY(0);
+	}
+}
+
+#hero {
+	display: grid;
+	grid-template-rows: 1fr 100px;
+	align-items: center;
+	justify-items: center;
+	min-height: calc(100vh - #{$nav-height});
+
+	#hero-logo {
+		position: absolute;
+		z-index: -100;
+		opacity: .5;
+		width: 30%;
+		min-width: 300px;
+		filter: blur(3px);
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	header {
+		text-align: center;
+		color: $primary-color;
+
+		#hero-title {
+			font-family: 'Kaushan Script', sans-serif;
+			font-size: 3rem;
+
+			animation: content-show 1s;
+			animation-delay: .2s;
+			animation-fill-mode: forwards;
+			opacity: 0;
+			translate: 0 -10px;
+			scale: .8;
+		}
+
+		#hero-subtitle {
+			font-size: 2rem;
+			color: $primary-color-75;
+
+			animation: content-show 1s;
+			animation-fill-mode: forwards;
+			opacity: 0;
+			translate: 0 -10px;
+			scale: .8;
+		}
+	}
+
+	#hero-down-indicator-container {
+		width: 100%;
+		min-height: 100px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		animation: $content-show-animation;
+		animation-fill-mode: forwards;
+		animation-delay: .75s;
+		opacity: 0;
+		translate: 0 -20px;
+		scale: .75;
+
+		svg {
+			animation: indicator-moving 1s infinite;
+		}
+	}
+}
+
+.section-header-underline {
+	min-width: 50px;
+	min-height: 5px;
+	width: 15%;
+	background-color: $primary-color;
+}
+
+#minigames,
+#stats {
+	// viewport height section height:
+	// height: calc(100vh - #{$home-section-padding-y} * 2);
+	padding: $home-section-padding-y 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 100px;
+
+	header {
+		display: flex;
+		align-items: center;
+		text-align: center;
+		flex-direction: column;
+		gap: 5px;
+	}
+}
+
+#minigames {
+	margin-top: 100px;
+	background-color: $primary-color-25;
+
+	#minigames-wrapper {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		gap: 50px;
+		row-gap: 25px;
+	}
+
+	.card {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+		width: 250px;
+		height: 250px;
+		gap: 10px;
+		text-align: center;
+		color: $primary-color;
+		background-color: white;
+		padding: 20px;
+		box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, .1);
+
+		&:nth-child(2) {
+			animation-delay: .2s;
+		}
+
+		&:nth-child(3) {
+			animation-delay: .3s;
+		}
+
+		&:nth-child(4) {
+			animation-delay: .4s;
+		}
+
+		&:nth-child(5) {
+			animation-delay: .5s;
+		}
+
+		header {
+			display: flex;
+			gap: 10px;
+			flex-direction: column;
+			text-transform: uppercase;
+		}
+	}
+}
+
+#stats {
+	$stats-amount: 3;
+
+	#stats-wrapper {
+		display: grid;
+		grid-gap: 200px;
+		grid-row-gap: 50px;
+		grid-template-columns: repeat($stats-amount, 1fr);
+		// display: flex;
+		// flex-direction: row;
+		// flex-wrap: wrap;
+		// justify-content: center;
+		// align-items: center;
+		// gap: 200px;
+		// row-gap: 50px;
+		// flex-basis: max-content;
+
+		.stat-container {
+			display: flex;
+			flex-direction: column;
+			gap: 10px;
+			text-align: center;
+
+			header {
+				.stat-underline {
+					min-width: 50px;
+					min-height: 2px;
+					width: 15%;
+					background-color: $primary-color;
+				}
+			}
+
+			.stat-value {
+				font-weight: 700;
+				font-size: 1.5rem;
+				color: $primary-color;
+			}
+		}
+	}
+}

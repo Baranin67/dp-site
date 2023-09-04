@@ -1,0 +1,176 @@
+{
+	"pages": {
+		"home": {
+			"title": "DARKPIXEL - Strona główna",
+			"sections": {
+				"hero": {
+					"title": "DARKPIXEL",
+					"subtitle": "Witaj na"
+				},
+				"minigames": {
+					"header": "TRYBY JAKIE ZNAJDZIESZ NA SERWERZE",
+					"cards": {
+						"bedwars": {
+							"header": "BedWars"
+						},
+						"survival": {
+							"header": "Survival"
+						},
+						"thebridge": {
+							"header": "TheBridge"
+						},
+						"tntrun": {
+							"header": "TntRun"
+						},
+						"tnttag": {
+							"header": "TntTag"
+						}
+					},
+					"buttons": {
+						"more": {
+							"text": "Więcej"
+						}
+					}
+				},
+				"stats": {
+					"header": "STATYSTYKI",
+					"stats": {
+						"online": {
+							"header": "Online",
+							"value": "%s"
+						},
+						"all": {
+							"header": "Jest nas już",
+							"value": "%s"
+						},
+						"banned": {
+							"header": "Zbanowanych",
+							"value": "%s"
+						}
+					}
+				}
+			}
+		},
+		"shop": {
+			"title": "DARKPIXEL - Sklep",
+			"price": {
+				"caption": "Cena",
+				"value": "%s zł"
+			},
+			"buttons": {
+				"buy": {
+					"text": "Kup"
+				}
+			},
+			"sections": {
+				"ranks": {
+					"header": "Rangi",
+					"cards": [
+						{
+							"title": "VIP"
+						},
+						{
+							"title": "VIP+"
+						},
+						{
+							"title": "MVP"
+						},
+						{
+							"title": "MVP+"
+						},
+						{
+							"title": "MVP++"
+						}
+					]
+				},
+				"coins": {
+					"header": "Monety",
+					"cards": [
+						{
+							"title": "PACZKA MONET",
+							"subtitle": "%s-%s monet"
+						},
+						{
+							"title": "PACZKA MONET",
+							"subtitle": "%s-%s monet"
+						},
+						{
+							"title": "PACZKA MONET",
+							"subtitle": "%s-%s monet"
+						},
+						{
+							"title": "PACZKA MONET",
+							"subtitle": "%s-%s monet"
+						},
+						{
+							"title": "PACZKA MONET",
+							"subtitle": "%s-%s monet"
+						}
+					]
+				}
+			}
+		}
+	},
+	"components": {
+		"footer": {
+			"links": {
+				"help_page": "Pomoc",
+				"faq_page": "FAQ",
+				"forum": "Forum",
+				"discord": "Serwer Discord",
+				"youtube": "Kanał YouTube",
+				"tiktok": "Nasz TikTok"
+			},
+			"copyright": "Darkpixel © 2022",
+			"mojang_info": "Darkpixel nie jest w żaden sposób powiązany z Mojang AB."
+		},
+		"logo": {
+			"text": "Darkpixel"
+		},
+		"nav": {
+			"buttons": {
+				"home_page": {
+					"text": "Strona główna"
+				},
+				"shop_page": {
+					"text": "Sklep"
+				},
+				"discord_page": {
+					"text": "Discord"
+				},
+				"links_drop": {
+					"text": "Linki"
+				},
+				"server_drop": {
+					"text": "Serwer"
+				},
+				"login": {
+					"text": "Zaloguj się"
+				},
+				"dropdown": {
+					"discord": {
+						"text": "Serwer Discord"
+					},
+					"youtube": {
+						"text": "Kanał YouTube"
+					},
+					"tiktok": {
+						"text": "Nasz TikTok"
+					},
+					"latest_news": {
+						"text": "Najnowsze wiadomości"
+					},
+					"our_forum": {
+						"text": "Nasze forum"
+					},
+					"faq": {
+						"text": "FAQ"
+					},
+					"report_department": {
+						"text": "Dział ds. zgłaszania"
+					}
+				}
+			}
+		}
+	}
+}

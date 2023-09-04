@@ -1,0 +1,71 @@
+{
+	"ranks": [
+		{
+			"id": 0,
+			"name": "VIP",
+			"price": 5.99,
+			"image": "MinecraftVipFontImg"
+		},
+		{
+			"id": 1,
+			"name": "VIP Plus",
+			"price": 20.99,
+			"image": "MinecraftVipPlusFontImg"
+		},
+		{
+			"id": 2,
+			"name": "MVP",
+			"price": 35.99,
+			"image": "MinecraftMvpFontImg"
+		},
+		{
+			"id": 3,
+			"name": "MVP Plus",
+			"price": 50.99,
+			"image": "MinecraftMvpPlusFontImg"
+		},
+		{
+			"id": 4,
+			"name": "MVP Plus Plus",
+			"price": 65.99,
+			"image": "MinecraftMvpPlusPlusFontImg"
+		}
+	],
+	"coins": [
+		{
+			"id": 5,
+			"name": "Paczka 5000 do 10000 monet",
+			"price": 3.99,
+			"min_coins": 5000,
+			"max_coins": 10000
+		},
+		{
+			"id": 6,
+			"name": "Paczka 15000 do 20000 monet",
+			"price": 9.99,
+			"min_coins": 15000,
+			"max_coins": 20000
+		},
+		{
+			"id": 7,
+			"name": "Paczka 25000 do 30000 monet",
+			"price": 14.99,
+			"min_coins": 25000,
+			"max_coins": 30000
+		},
+		{
+			"id": 8,
+			"name": "Paczka 35000 do 40000 monet",
+			"price": 19.99,
+			"min_coins": 35000,
+			"max_coins": 40000
+		},
+		{
+			"id": 9,
+			"name": "Paczka 45000 do 50000 monet",
+			"price": 25.99,
+			"min_coins": 45000,
+			"max_coins": 50000
+		}
+	]
+}

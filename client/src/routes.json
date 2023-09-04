@@ -1,0 +1,11 @@
+{
+	"pages": {
+		"home": "/",
+		"discord": "/discord",
+		"shop": "/sklep",
+		"login": "/logowanie",
+		"register": "/rejestracja",
+		"ranks": "/rangi",
+		"profile": "/profil"
+	}
+}

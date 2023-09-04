@@ -1,0 +1,40 @@
+@use 'sass:map';
+@import '../../../commons/style/variables.scss';
+
+.card {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	width: 250px;
+	height: 250px;
+	gap: 20px;
+	padding: 20px;
+	background-color: white;
+	box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, .1);
+	transition: $transitions-time ease-in-out translate,
+		$transitions-time ease-in-out scale;
+
+	animation: $content-show-animation;
+	animation-fill-mode: forwards;
+	opacity: 0;
+	translate: 0 -20px;
+	scale: 1.1;
+
+	&:hover {
+		transform: translateY(-10px), scale(1.1);
+	}
+
+	img,
+	svg {
+		filter: drop-shadow(0 0 10px rgba(0, 0, 0, .25));
+	}
+
+	header {
+		text-align: center;
+
+		.subtitle {
+			opacity: .5;
+		}
+	}
+}

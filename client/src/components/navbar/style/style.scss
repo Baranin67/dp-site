@@ -1,0 +1,109 @@
+@import '../../../commons/style/variables.scss';
+
+$btn-hover-opacity: .5;
+$nav-btn-font-size: auto;
+$nav-btn-active-border: 0 -5px 0 0 white inset;
+$right-container-font-size: auto;
+$right-container-icon-size: auto;
+
+#nav-main-container {
+	min-height: $nav-height;
+	background: linear-gradient($primary-color, #002C55);
+	display: flex;
+	box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .25);
+	position: sticky;
+	top: 0;
+	z-index: 0;
+
+	#nav-left-container,
+	#nav-right-container {
+		background-color: white;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color: $primary-color;
+		min-width: 250px;
+		width: 25%;
+		gap: 15px;
+		position: relative;
+
+		* {
+			transition: ease-in-out $transitions-time opacity;
+		}
+
+		&:hover * {
+			opacity: $btn-hover-opacity;
+		}
+	}
+
+	#nav-left-container {
+		#nav-logo-container {
+			font-size: 1.75rem;
+		}
+	}
+
+	#nav-left-container::after {
+		content: '';
+		position: absolute;
+		position: absolute;
+		right: -40px;
+		background: linear-gradient(to bottom right, white 50%, transparent 50%);
+		width: 40px;
+		height: 100%;
+	}
+
+	#nav-right-container {
+		font-weight: 600;
+		font-size: 1.1rem;
+
+		&::before {
+			content: '';
+			position: absolute;
+			position: absolute;
+			left: -40px;
+			background: linear-gradient(to bottom left, white 50%, transparent 50%);
+			width: 40px;
+			height: 100%;
+		}
+
+		svg {
+			width: $right-container-icon-size;
+		}
+	}
+
+	#nav-center-container {
+		display: flex;
+		justify-content: space-evenly;
+		width: 100%;
+		max-width: 1000px;
+
+		.nav-btn {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			color: white;
+			font-weight: 600;
+			font-size: $nav-btn-font-size;
+			position: relative;
+
+			.nav-btn-content {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				gap: 10px;
+			}
+
+			&:not(&.active) .nav-btn-content {
+				transition: ease-in-out $transitions-time opacity;
+			}
+
+			&:hover:not(&.active) .nav-btn-content {
+				opacity: $btn-hover-opacity;
+			}
+
+			&.active {
+				box-shadow: $nav-btn-active-border;
+			}
+		}
+	}
+}

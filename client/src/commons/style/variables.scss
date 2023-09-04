@@ -1,0 +1,38 @@
+$primary-color: #00386B;
+$primary-color-75: rgba(0, 55, 107, .75);
+$primary-color-50: rgba(0, 55, 107, .5);
+$primary-color-25: rgba(0, 55, 107, .25);
+$primary-color-10: rgba(0, 55, 107, .1);
+
+$discord-color: #596BEB;
+$discord-color-50: rgba(89, 107, 235, .5);
+$discord-color-25: rgba(89, 107, 235, .25);
+$discord-color-10: rgba(89, 107, 235, .1);
+
+$youtube-color: #FF0000;
+$youtube-color-50: rgba(255, 0, 0, .5);
+$youtube-color-25: rgba(255, 0, 0, .25);
+$youtube-color-10: rgba(255, 0, 0, .1);
+
+$tiktok-color: #69C6CE;
+$tiktok-color-50: rgba(105, 198, 206, .5);
+$tiktok-color-25: rgba(105, 198, 206, .25);
+$tiktok-color-10: rgba(105, 198, 206, .1);
+
+$transitions-time: .1s;
+
+$nav-height: 75px;
+
+$home-section-padding-y: 100px;
+
+$glitch-text-shadow: -5px -3px 0 #FA00FF, 5px 3px 0 #00F0FF;
+
+$content-show-animation: content-show .5s;
+
+@keyframes content-show {
+	to {
+		opacity: 1;
+		translate: 0 0;
+		scale: 1;
+	}
+}

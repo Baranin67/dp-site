@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import '../../commons/style/variables.scss';
+
+html,
+body {
+	width: 100%;
+	margin: 0;
+	background-color: $primary-color-10;
+	overflow-x: hidden;
+}
+
+* {
+	font-family: 'Chakra Petch', sans-serif;
+}
+
+.btn {
+	transition: ease-in-out $transitions-time opacity, ease-in-out $transitions-time background-color;
+
+	&:hover {
+		cursor: pointer;
+	}
+}
+
+.logo-container {
+	color: $primary-color;
+	font-size: 1.5rem;
+	transition: &transition-time ease-in-out opacity;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+
+	&:hover {
+		opacity: .5;
+	}
+
+	span {
+		font-family: 'Kaushan Script', sans-serif;
+	}
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin: 0;
+}
+
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+::-webkit-scrollbar-track {
+	background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+	background: $primary-color-75;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: $primary-color-50;
+}
